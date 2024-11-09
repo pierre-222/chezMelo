@@ -229,6 +229,33 @@
             font-size: 14Px;  /* Réduit la taille du texte des commentaires */
             line-height: 1.4;  /* Ajuste l'espacement entre les lignes pour plus de lisibilité */
         }
+        .image-section {
+            text-align: center; /* Centrer le contenu de la section */
+            padding: 40px 20px; /* Ajouter un peu de padding autour de la section */
+            background-color: #f7f7f7; /* Couleur de fond de la section (optionnel) */
+            border-radius: 8px; /* Bordure arrondie (optionnel) */
+            margin-top: 40px; /* Espacement avant cette section */
+        }
+
+        .image-links {
+            display: flex; /* Affiche les images côte à côte */
+            gap: 100px; /* Espacement entre les images */
+            justify-content: center; /* Centrer les images sur la page */
+            margin-top: -60px;
+        }
+
+        .image-link {
+            width: auto; /* Largeur des images */
+            height: 120px; /* Hauteur automatique pour garder la proportion */
+            border-radius: 8px; /* Arrondir les coins des images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée légère pour les images */
+            transition: transform 0.3s ease; /* Ajout d'une transition pour le survol */
+        }
+
+    .image-link:hover {
+        transform: scale(1.2); /* Zoom lors du survol */
+    }
+
 
 
         /* Media Queries pour rendre le site responsive */
@@ -317,6 +344,24 @@
             Une cuisine italienne authentique et traditionnelle!
         </p>
     </section>
+
+
+    <!-- Section 1.bis : Réservation et direction -->
+    <section class="image-section">
+        <div class="image-links">
+            <!-- Première image avec un lien -->
+            <a href="https://www.google.fr/maps/place/Chez+Melo/@43.403784,3.6922281,17z/data=!3m2!4b1!5s0x12b135a28cc9bf85:0xc58800c40daf4669!4m6!3m5!1s0x12b135a28d3cfe55:0xead52dd8c9d0faae!8m2!3d43.4037801!4d3.694803!16s%2Fg%2F11dxr_9rhl?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D
+            " target="_blank">
+                <img src="images/sur_place.png" alt="je me rends sur place" class="image-link">
+            </a>
+    
+            <!-- Deuxième image avec un lien -->
+            <a href="tel:+33951703235" target="_blank">
+                <img src="images/je_reserve.png" alt="je réserve" class="image-link">
+            </a>
+        </div>
+    </section>
+
 
     <!-- Section 2: La carte -->
     <section class="content-section">
