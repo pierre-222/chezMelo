@@ -7,7 +7,7 @@
     <meta name="description" content="Pizzeria Chez Melo à Sète – Pizza comme en Italie">
     <title>Pizzeria Chez Melo - Sète</title>
     <!-- Google Fonts : Poppins pour le corps du texte et Dancing Script pour le texte manuscrit -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Dancing+Script&family=Fredericka+the+Great&family=Permanent+Marker&family=Amatic+SC&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Dancing+Script&display=swap" rel="stylesheet">
     <!-- Font Awesome pour les icônes -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
@@ -46,14 +46,14 @@
         }
 
         .green {
-            background-color: #27ae60; /* Vert (couleur du drapeau italien) */
-            color: white;
-            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
+            color: black;
+            font-family: 'Fredericka the Great', cursive;
             font-size: 1.2em; /* Taille réduite du texte du titre */
         }
 
         .white {
-            background-color: #ffffff;
+            background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
             color: black;
             font-family: 'Poppins', sans-serif;
             font-size: 0.8em; /* Taille du texte réduite */
@@ -64,8 +64,8 @@
         }
 
         .red {
-            background-color: #e74c3c; /* Rouge */
-            color: white;
+            background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
+            color: black;
             font-family: 'Poppins', sans-serif;
             font-size: 1.3em; /* Taille du texte réduite */
             justify-content: space-evenly; /* Espace les icônes horizontalement */
@@ -122,6 +122,13 @@
             font-size: 2.2em;
         }
 
+        .rag {
+            font-family: 'Dancing Script', cursive;
+            color: #e74c3c;  /* Couleur rouge */
+            font-size: 2.2em;
+        }
+
+
         p {
             font-size: 18px;
             line-height: 1.6;
@@ -151,12 +158,12 @@
         /* Icônes réseaux sociaux */
         .social-icons {
             display: flex;
-            gap: 18px;
+            gap: 15px;
             justify-content: center;
         }
 
         .social-icons a {
-            color: white;
+            color: black;
             font-size: 1.8em; /* Agrandir les icônes pour une meilleure visibilité */
             margin: 0 15px; /* Augmenter l'espace entre chaque icône */
         }
@@ -264,7 +271,7 @@
 
 
         /* Media Queries pour rendre le site responsive */
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 620px) {
             body {
                 padding: 0 10px;  /* Réduit la marge sur les petits écrans */
             }
@@ -275,8 +282,26 @@
                 margin: 0; /* Enlève les marges inutiles */
             }
 
-            .intro-text {
-                font-size: 1.8em;  /* Réduit la taille du texte sur les petits écrans */
+            .menu-img {
+                width: 100%;  /* Les images prennent toute la largeur de l'écran */
+            }
+
+            header h1 {
+                font-size: 1.3em;  /* Taille du titre encore plus petite sur mobile */
+            }
+
+            .header-info a {
+                font-size: 1.1em;  /* Taille des liens réduite */
+            }
+
+            .social-icons a {
+                font-size: 1.6em;  /* Réduit la taille des icônes */
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+        .green h1 {
+                font-size: 1.4em; /* Réduit encore la taille du titre pour les petits écrans */
             }
 
             .menu-img {
@@ -284,21 +309,15 @@
             }
 
             header h1 {
-                font-size: 1.8em;  /* Taille du titre encore plus petite sur mobile */
+                font-size: 1.4em;  /* Taille du titre encore plus petite sur mobile */
             }
 
             .header-info a {
-                font-size: 14px;  /* Taille des liens réduite */
+                font-size: 1em;  /* Taille des liens réduite */
             }
 
             .social-icons a {
-                font-size: 1.5em;  /* Réduit la taille des icônes */
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-        .green h1 {
-                font-size: 1.2em; /* Réduit encore la taille du titre pour les petits écrans */
+                font-size: 1.4em;  /* Réduit la taille des icônes */
             }
         }
     </style>
@@ -346,7 +365,7 @@
 
     <!-- Section 1: Présentation -->
     <section class="content-section">
-        <h2>Ciao Ragazzi !</h2>
+        <h2 class="rag">Ciao Ragazzi !</h2>
         <p>
             <b>Bienvenue chez Mélo!</b> Des Pizzas délicieuses, et une ambiance comme en Italie !<br>
             Avec des ingrédients magnifiques et une pâte pétrie à la main et avec amour.<br>
