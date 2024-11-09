@@ -12,14 +12,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         /* Global Styles */
-        /* Texte d'introduction "Ciao Ragazzi" */
-        .intro-text {
-            font-family: 'Dancing Script', cursive; /* Police manuscrite */
-            font-weight: bold; /* Gras */
-            font-size: 2.2em; /* Taille plus grande */
-            position: relative; /* Permet le décalage vertical */
-            top: -10px; /* Décale légèrement le texte vers le haut */
-        }
 
         body {
             font-family: 'Poppins', sans-serif;
@@ -226,6 +218,19 @@
             background-color: rgba(0, 0, 0, 0.8);
         }
 
+        /* Remonter légèrement les étoiles et réduire la taille du texte des commentaires */
+        .review .stars {
+            font-size: 14px;  /* Réduit la taille des étoiles */
+            position: relative;  /* Permet de décaler les étoiles */
+            top: -15px;  /* Remonte les étoiles de 4px */
+        }
+
+        .review-text {
+            font-size: 14Px;  /* Réduit la taille du texte des commentaires */
+            line-height: 1.4;  /* Ajuste l'espacement entre les lignes pour plus de lisibilité */
+        }
+
+
         /* Media Queries pour rendre le site responsive */
         @media screen and (max-width: 768px) {
             body {
@@ -305,7 +310,7 @@
 
     <!-- Section 1: Présentation -->
     <section class="content-section">
-        <h2 class="intro-text">Ciao Ragazzi !</h2>
+        <h2>Ciao Ragazzi !</h2>
         <p>
             <b>Bienvenue chez Mélo!</b> Des Pizzas délicieuses, et une ambiance comme en Italie !<br>
             Avec des ingrédients magnifiques et une pâte pétrie à la main et avec amour.<br>
