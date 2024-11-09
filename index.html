@@ -170,6 +170,10 @@
             font-size: 1.6em; /* Taille de l'icône Google Maps */
         }
 
+        .google-maps a i {
+            margin-right: 8px;  /* Ajuste la valeur pour obtenir l'espacement souhaité */
+        }
+
         /* Diaporama (slider) */
         .menu-slider {
             position: relative;
@@ -238,15 +242,15 @@
         }
 
         .image-links {
-            display: flex; /* Affiche les images côte à côte */
-            gap: 100px; /* Espacement entre les images */
-            justify-content: center; /* Centrer les images sur la page */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Crée deux colonnes de largeur égale */
+            gap: 10px; /* Espace entre les images */
             margin-top: -60px;
         }
 
         .image-link {
             width: auto; /* Largeur des images */
-            height: 120px; /* Hauteur automatique pour garder la proportion */
+            height: 80px; /* Hauteur automatique pour garder la proportion */
             border-radius: 8px; /* Arrondir les coins des images */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée légère pour les images */
             transition: transform 0.3s ease; /* Ajout d'une transition pour le survol */
@@ -313,8 +317,8 @@
                     <strong>09.51.70.32.35</strong> <!-- Taille réduite du numéro -->
                 </a>
                 <div class="google-maps">
-                    <i class="fas fa-map-marker-alt"></i>
                     <a href="https://www.google.fr/maps/place/Chez+Melo/@43.403784,3.6922281,17z/data=!3m2!4b1!5s0x12b135a28cc9bf85:0xc58800c40daf4669!4m6!3m5!1s0x12b135a28d3cfe55:0xead52dd8c9d0faae!8m2!3d43.4037801!4d3.694803!16s%2Fg%2F11dxr_9rhl?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i>
                         <strong>26 Rue Alsace Lorraine, 34200 Sète</strong> <!-- Taille réduite de l'adresse -->
                     </a>
                 </div>
@@ -346,23 +350,6 @@
     </section>
 
 
-    <!-- Section 1.bis : Réservation et direction -->
-    <section class="image-section">
-        <div class="image-links">
-            <!-- Première image avec un lien -->
-            <a href="https://www.google.fr/maps/place/Chez+Melo/@43.403784,3.6922281,17z/data=!3m2!4b1!5s0x12b135a28cc9bf85:0xc58800c40daf4669!4m6!3m5!1s0x12b135a28d3cfe55:0xead52dd8c9d0faae!8m2!3d43.4037801!4d3.694803!16s%2Fg%2F11dxr_9rhl?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D
-            " target="_blank">
-                <img src="images/sur_place.png" alt="je me rends sur place" class="image-link">
-            </a>
-    
-            <!-- Deuxième image avec un lien -->
-            <a href="tel:+33951703235" target="_blank">
-                <img src="images/je_reserve.png" alt="je réserve" class="image-link">
-            </a>
-        </div>
-    </section>
-
-
     <!-- Section 2: La carte -->
     <section class="content-section">
         <h2>Notre carte</h2>
@@ -384,7 +371,23 @@
         </div>
     </section>
 
-    <!-- Section 3: Avis clients -->
+        <!-- Section 3 : Réservation et adresse -->
+        <section class="image-section">
+            <div class="image-links">
+                <!-- Première image avec un lien -->
+                <a href="https://www.google.fr/maps/place/Chez+Melo/@43.403784,3.6922281,17z/data=!3m2!4b1!5s0x12b135a28cc9bf85:0xc58800c40daf4669!4m6!3m5!1s0x12b135a28d3cfe55:0xead52dd8c9d0faae!8m2!3d43.4037801!4d3.694803!16s%2Fg%2F11dxr_9rhl?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D
+                " target="_blank">
+                    <img src="images/sur_place.png" alt="je me rends sur place" class="image-link">
+                </a>
+        
+                <!-- Deuxième image avec un lien -->
+                <a href="tel:+33951703235" target="_blank">
+                    <img src="images/je_reserve.png" alt="je réserve" class="image-link">
+                </a>
+            </div>
+        </section>
+      
+    <!-- Section 4: Avis clients -->
     <section class="content-section">
         <h2>Avis de nos clients</h2>
 
