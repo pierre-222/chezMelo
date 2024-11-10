@@ -279,12 +279,12 @@
 .opening-hours-section {
     margin: 40px auto;
     text-align: center;
-    max-width: 450px;  /* Réduit la largeur du tableau */
+    max-width: 320px;  /* Réduit la largeur du tableau */
 }
 
 /* Titre des horaires (h2) */
 .opening-hours-title {
-    font-size: 1.6em;  /* Réduit la taille de la police */
+    font-size: 1.2em;  /* Réduit la taille de la police */
     color: #333;
     margin-bottom: 20px;
 }
@@ -301,7 +301,7 @@
 .opening-hours-row {
     display: flex;
     justify-content: space-between;
-    padding: 6px 10px;  /* Réduit la hauteur des cellules */
+    padding: 4px 8px;  /* Réduit la hauteur des cellules */
     border-bottom: 1px solid #ddd;
     align-items: center;
 }
@@ -310,9 +310,9 @@
 .day {
     font-weight: bold;
     text-transform: capitalize;
-    width: 20%;  /* Réduit la largeur de la colonne des jours */
-    text-align: left;
-    font-size: 0.9em;  /* Réduit la taille de la police */
+    width: 33%;  /* Réduit la largeur de la colonne des jours */
+    text-align: center;
+    font-size: 0.8em;  /* Réduit la taille de la police */
 }
 
 /* Style pour les horaires */
@@ -320,7 +320,7 @@
     color: #555;
     width: 40%;  /* Réduit la largeur de la colonne des horaires */
     text-align: center;
-    font-size: 0.9em;  /* Réduit la taille de la police */
+    font-size: 0.8em;  /* Réduit la taille de la police */
 }
 
 /* Ligne fermée (Dimanche) */
