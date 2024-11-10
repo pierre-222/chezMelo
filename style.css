@@ -24,7 +24,6 @@
         }
 
         .banner > div {
-            height: 80px; /* Hauteur réduite de chaque bande */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -34,19 +33,26 @@
             background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
             color: black;
             font-family: 'Poppins', cursive;
-            font-size: 1.2em; /* Taille réduite du texte du titre */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center; /* Centre les éléments verticalement */
+            height: 80px; /* Hauteur réduite de chaque bande */
+
         }
 
         /* Réduire la marge au-dessus du titre */
         .green h1 {
         margin-top: 0;    /* Supprime la marge supérieure */
-        line-height: 1; /* Ajuste la hauteur de ligne si nécessaire */
+        line-height: 0.5em; /* Ajuste la hauteur de ligne si nécessaire */
         font-size: 1.2em;
         }
+
+        /* Taille de l'image par défaut */
+        .logo-img {
+        width: 275px; /* Taille par défaut de l'image */
+        }
+
         .white {
             background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
             color: black;
@@ -56,6 +62,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center; /* Centre les éléments verticalement */
+            height: 65px; /* Hauteur réduite de chaque bande */
+
         }
 
         .red {
@@ -65,6 +73,7 @@
             font-size: 1.3em; /* Taille du texte réduite */
             justify-content: space-evenly; /* Espace les icônes horizontalement */
             text-align: center;
+            height: 65px; /* Hauteur réduite de chaque bande */
         }
 
         header h1 {
@@ -85,7 +94,7 @@
             color: black;
             text-decoration: none;
             font-size: 16px; /* Taille réduite pour les liens */
-            margin-top: 10px;  /* Ajoute de l'espace sous le lien du téléphone */
+            margin-top: 8px;  /* Ajoute de l'espace sous le lien du téléphone */
             text-decoration: underline;  /* Applique le soulignement */
             display: flex;
             align-items: center;
@@ -162,9 +171,7 @@
         }
 
         .social-icons a {
-            color: black;
-            font-size: 1.8em; /* Agrandir les icônes pour une meilleure visibilité */
-            margin: 0 15px; /* Augmenter l'espace entre chaque icône */
+            margin: 15px; /* Augmenter l'espace entre chaque icône */
         }
 
         .social-icons a:hover {
@@ -348,9 +355,14 @@
             }
 
             .green h1 {
-                font-size: 1.6em; /* Réduit la taille du titre */
-                text-align: center; /* S'assure que le titre est centré */
-                margin: 0; /* Enlève les marges inutiles */
+                margin-top: 0;    /* Supprime la marge supérieure */
+                line-height: 0.5em; /* Ajuste la hauteur de ligne si nécessaire */
+                font-size: 1.1em;
+            }
+
+            /* Taille de l'image par défaut */
+             .logo-img {
+            width: 250px; /* Taille par défaut de l'image */
             }
 
             .menu-img {
@@ -366,7 +378,7 @@
             }
 
             .social-icons a {
-                font-size: 1.6em;  /* Réduit la taille des icônes */
+                margin: 13px; /* Augmenter l'espace entre chaque icône */
             }
             .prev, .next {
                 font-size: 16px;  /* Réduire la taille des flèches */
@@ -376,9 +388,16 @@
 
         @media screen and (max-width: 500px) {
         .green h1 {
-                font-size: 1.4em; /* Réduit encore la taille du titre pour les petits écrans */
+            margin-top: 0;    /* Supprime la marge supérieure */
+            line-height: 0.5em; /* Ajuste la hauteur de ligne si nécessaire */
+            font-size: 1em;
             }
 
+            /* Taille de l'image par défaut */
+            .logo-img {
+                width: 225px; /* Taille par défaut de l'image */
+            }
+    
             .menu-img {
                 width: 100%;  /* Les images prennent toute la largeur de l'écran */
             }
@@ -392,7 +411,7 @@
             }
 
             .social-icons a {
-                font-size: 1.4em;  /* Réduit la taille des icônes */
+                margin: 12px; /* Augmenter l'espace entre chaque icône */
             }
             
             .prev, .next {
