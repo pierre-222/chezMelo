@@ -165,9 +165,7 @@
         }
 
         .social-icons a:hover {
-            color: #1a73e8; /* Change la couleur des icônes en bleu Google au survol */
             transform: scale(1.2); /* Agrandit légèrement l'icône */
-            box-shadow: 0 0 10px rgba(26, 115, 232, 0.5); /* Ajoute une ombre bleue légère */
         }
 
         /* Diaporama (slider) */
@@ -335,11 +333,11 @@
             }   
 
             .white {
-                height: 45px; /* Hauteur réduite de chaque bande */
+                height: 55px; /* Hauteur réduite de chaque bande */
             }   
 
             .red {
-                height: 45px; /* Hauteur réduite de chaque bande */
+                height: 55px; /* Hauteur réduite de chaque bande */
             }   
 
             /* Taille de l'image par défaut */
@@ -360,11 +358,11 @@
             }
 
             .social-icons {
-                width: 20px;
+                width: 25px;
             }
     
             .social-icons a {
-                margin: 12px; /* Augmenter l'espace entre chaque icône */
+                margin: 12px; /* Diminuer l'espace entre chaque icône */
             }
             
             .prev, .next {
