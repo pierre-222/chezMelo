@@ -1,12 +1,12 @@
         body {
+            width: 100%;
+            max-width: 794px;/* Limite la largeur du site à la taille d'une page A4 */
+            margin: 0 auto;
             font-family: 'Poppins', sans-serif;
-            margin: 0;
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
             padding-bottom: 50px;
-            max-width: 794px; /* Limite la largeur du site à la taille d'une page A4 */
-            margin: 0 auto;  /* Centre le contenu horizontalement */
             padding: 0 20px;  /* Ajoute un peu de marge pour éviter que le contenu touche les bords */
         }
 
@@ -32,38 +32,37 @@
         .green {
             background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
             color: black;
-            font-family: 'Poppins', cursive;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center; /* Centre les éléments verticalement */
-            height: 100px; /* Hauteur réduite de chaque bande */
-
+            height: 95px; /* Hauteur réduite de chaque bande */
         }
 
         /* Réduire la marge au-dessus du titre */
         .green h1 {
-        margin-top: 10px;    /* Supprime la marge supérieure */
+        margin-top: 5px;    /* Supprime la marge supérieure */
         line-height: 0.5em; /* Ajuste la hauteur de ligne si nécessaire */
-        font-size: 1.2em;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.4em;
         }
 
         /* Taille de l'image par défaut */
         .logo-img {
         width: 275px; /* Taille par défaut de l'image */
+        margin-top: 6px;
         }
 
         .white {
             background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
             color: black;
             font-family: 'Poppins', sans-serif;
-            font-size: 0.8em; /* Taille du texte réduite */
+            font-size: 0.7em; /* Taille du texte réduite */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center; /* Centre les éléments verticalement */
-            height: 50px; /* Hauteur réduite de chaque bande */
-
+            height: 55px; /* Hauteur réduite de chaque bande */
         }
 
         .red {
@@ -73,11 +72,10 @@
             font-size: 1.3em; /* Taille du texte réduite */
             justify-content: space-evenly; /* Espace les icônes horizontalement */
             text-align: center;
-            height: 60px; /* Hauteur réduite de chaque bande */
+            height: 55px; /* Hauteur réduite de chaque bande */
         }
 
         header h1 {
-            margin: 0;
             font-family: 'Dancing Script', cursive;
             font-size: 1.2em; /* Taille réduite pour le titre */
             text-align: center;
@@ -92,12 +90,9 @@
 
         .header-info a {
             color: black;
-            text-decoration: none;
             font-size: 1.2em; /* Taille réduite pour les liens */
-            margin-top: 8px;  /* Ajoute de l'espace sous le lien du téléphone */
+            margin-top: 6px;  /* Ajoute de l'espace sous le lien du téléphone */
             text-decoration: underline;  /* Applique le soulignement */
-            display: flex;
-            align-items: center;
         }
 
         .header-info a:hover, .google-maps a:hover {
@@ -115,6 +110,7 @@
         .content-section {
             padding: 20px;
             text-align: center;
+            margin: 20px auto;
         }
 
         h2 {
@@ -162,7 +158,6 @@
             display: flex;
             gap: 5px;
             justify-content: center;
-            margin-top: 10px;
         }
 
         .social-icons a {
@@ -173,20 +168,6 @@
             color: #1a73e8; /* Change la couleur des icônes en bleu Google au survol */
             transform: scale(1.2); /* Agrandit légèrement l'icône */
             box-shadow: 0 0 10px rgba(26, 115, 232, 0.5); /* Ajoute une ombre bleue légère */
-        }
-
-        .header-info .google-maps {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .header-info .google-maps i {
-            font-size: 1.6em; /* Taille de l'icône Google Maps */
-        }
-
-        .google-maps a i {
-            margin-right: 8px;  /* Ajuste la valeur pour obtenir l'espacement souhaité */
         }
 
         /* Diaporama (slider) */
@@ -292,7 +273,7 @@
 
 /* Tableau des horaires */
 .opening-hours-table {
-    width: 100%;
+    box-sizing: border-box;
     border-collapse: collapse;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -337,56 +318,29 @@
 
 /* Les cellules du tableau sont maintenant bien réparties avec un espacement visuel */
 .opening-hours-row div {
+    width: 48%;
     padding: 2px;
 }
 
-
-
-
-        /* Media Queries pour rendre le site responsive */
-        @media screen and (max-width: 620px) {
-            body {
-                padding: 0 10px;  /* Réduit la marge sur les petits écrans */
-            }
-
-            .green h1 {
-                margin-top: 10px;    /* Supprime la marge supérieure */
-                line-height: 0.5em; /* Ajuste la hauteur de ligne si nécessaire */
-                font-size: 1.1em;
-            }
-
-            /* Taille de l'image par défaut */
-             .logo-img {
-            width: 225px; /* Taille par défaut de l'image */
-            }
-
-            .menu-img {
-                width: 100%;  /* Les images prennent toute la largeur de l'écran */
-            }
-
-            header h1 {
-                font-size: 1.3em;  /* Taille du titre encore plus petite sur mobile */
-            }
-
-            .header-info a {
-                font-size: 1em;  /* Taille des liens réduite */
-            }
-
-            .social-icons a {
-                margin: 13px; /* Augmenter l'espace entre chaque icône */
-            }
-            .prev, .next {
-                font-size: 16px;  /* Réduire la taille des flèches */
-                padding: 10px;  /* Réduire l'espacement autour des flèches */
-            }
-        }
-
-        @media screen and (max-width: 500px) {
+/* Media Queries pour rendre le site responsive */
+@media screen and (max-width: 500px) {
         .green h1 {
-            margin-top: 10px;    /* Supprime la marge supérieure */
+            margin-top: 5px;    /* Supprime la marge supérieure */
             line-height: 0.5em; /* Ajuste la hauteur de ligne si nécessaire */
-            font-size: 1em;
+            font-size: 1.2em;
             }
+
+            .green {
+                height: 70px; /* Hauteur réduite de chaque bande */
+            }   
+
+            .white {
+                height: 45px; /* Hauteur réduite de chaque bande */
+            }   
+
+            .red {
+                height: 45px; /* Hauteur réduite de chaque bande */
+            }   
 
             /* Taille de l'image par défaut */
             .logo-img {
@@ -405,13 +359,17 @@
                 font-size: 0.9em;  /* Taille des liens réduite */
             }
 
+            .social-icons {
+                width: 20px;
+            }
+    
             .social-icons a {
                 margin: 12px; /* Augmenter l'espace entre chaque icône */
             }
             
             .prev, .next {
-                font-size: 12px;  /* Réduire la taille des flèches */
+                font-size: 10px;  /* Réduire la taille des flèches */
                 padding: 8px;  /* Réduire l'espacement autour des flèches */
             }
             
-        }
+}
