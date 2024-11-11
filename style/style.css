@@ -1,259 +1,296 @@
-        body {
-            width: 100%;
-            max-width: 794px;/* Limite la largeur du site à la taille d'une page A4 */
-            margin: 0 auto;
-            font-family: 'Poppins', sans-serif;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            padding-bottom: 50px;
-            padding: 0 20px;  /* Ajoute un peu de marge pour éviter que le contenu touche les bords */
-        }
+body {
+    width: 100%;
+    max-width: 794px;/* Limite la largeur du site à la taille d'une page A4 */
+    margin:  auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
 
-        /* Bannière avec les couleurs du drapeau italien */
-        header {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
+/* Bannière avec les couleurs du drapeau italien */
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-        .banner {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
+.banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-        .banner > div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.banner > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .green {
-            background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
-            color: black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; /* Centre les éléments verticalement */
-            height: 95px; /* Hauteur réduite de chaque bande */
-        }
+.green {
+    background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centre les éléments verticalement */
+    height: 95px; /* Hauteur réduite de chaque bande */
+}
 
-        /* Réduire la marge au-dessus du titre */
-        .green h1 {
-        margin-top: 5px;    /* Supprime la marge supérieure */
-        line-height: 0.5em; /* Ajuste la hauteur de ligne si nécessaire */
-        font-family: 'Dancing Script', cursive;
-        font-size: 1.4em;
-        }
+/* Réduire la marge au-dessus du titre */
+.green h1 {
+    margin-top: 5px;    /* Supprime la marge supérieure */
+    line-height: 0.5em; /* Ajuste la hauteur de ligne si nécessaire */
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+}
 
-        /* Taille de l'image par défaut */
-        .logo-img {
-        width: 275px; /* Taille par défaut de l'image */
-        margin-top: 6px;
-        }
+/* Taille de l'image par défaut */
+.logo-img {
+    width: 275px; /* Taille par défaut de l'image */
+    margin-top: 6px;
+}
 
-        .white {
-            background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
-            color: black;
-            font-family: 'Poppins', sans-serif;
-            font-size: 0.7em; /* Taille du texte réduite */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; /* Centre les éléments verticalement */
-            height: 55px; /* Hauteur réduite de chaque bande */
-        }
+.white {
+    background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em; /* Taille du texte réduite */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centre les éléments verticalement */
+    height: 55px; /* Hauteur réduite de chaque bande */
+}
 
-        .red {
-            background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
-            color: black;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.3em; /* Taille du texte réduite */
-            justify-content: space-evenly; /* Espace les icônes horizontalement */
-            text-align: center;
-            height: 55px; /* Hauteur réduite de chaque bande */
-        }
+.red {
+    background: linear-gradient(to right, #27ae60 20%, #ffffff 20%, #ffffff 80%, #e74c3c 20%);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em; /* Taille du texte réduite */
+    justify-content: space-evenly; /* Espace les icônes horizontalement */
+    text-align: center;
+    height: 55px; /* Hauteur réduite de chaque bande */
+}
 
-        header h1 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 1.2em; /* Taille réduite pour le titre */
-            text-align: center;
-        }
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em; /* Taille réduite pour le titre */
+    text-align: center;
+}
 
-        .header-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-        .header-info a {
-            color: black;
-            font-size: 1.2em; /* Taille réduite pour les liens */
-            margin-top: 6px;  /* Ajoute de l'espace sous le lien du téléphone */
-            text-decoration: underline;  /* Applique le soulignement */
-        }
+.header-info a {
+    color: black;
+    font-size: 1.2em; /* Taille réduite pour les liens */
+    margin-top: 6px;  /* Ajoute de l'espace sous le lien du téléphone */
+    text-decoration: underline;  /* Applique le soulignement */
+}
 
-        .header-info a:hover, .google-maps a:hover {
-            text-decoration: underline solid #1a73e8;  /* Bleu Google pour le soulignement au survol */
-            color: #1a73e8; /* Change la couleur du texte au survol */
-        }
+.header-info a:hover, .google-maps a:hover {
+    text-decoration: underline solid #1a73e8;  /* Bleu Google pour le soulignement au survol */
+    color: #1a73e8; /* Change la couleur du texte au survol */
+}
 
-        /* Icône du téléphone (noire et sans fond) */
-        .icon {
-            width: 20px;
-            margin-right: 10px;
-        }
+/* Icône du téléphone (noire et sans fond) */
+.icon {
+    width: 20px;
+    margin-right: 10px;
+}
 
-        /* Section centrée */
-        .content-section {
-            padding: 20px;
-            text-align: center;
-            margin: 20px auto;
-        }
+/* Section centrée */
+.content-section {
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+}
 
-        h2 {
-            font-family: 'Dancing Script', cursive;  /* Police manuscrite comme pour Ciao Ragazzi */
-            color: #e74c3c;  /* Couleur rouge */
-            font-size: 2.2em;
-        }
+h2 {
+    font-family: 'Dancing Script', cursive;  /* Police manuscrite comme pour Ciao Ragazzi */
+    color: #e74c3c;  /* Couleur rouge */
+    font-size: 2.2em;
+}
 
-        .rag {
-            font-family: 'Dancing Script', cursive;
-            color: #e74c3c;  /* Couleur rouge */
-            font-size: 2.2em;
-        }
+.rag {
+    font-family: 'Dancing Script', cursive;
+    color: #e74c3c;  /* Couleur rouge */
+    font-size: 2.2em;
+}
 
 
-        p {
-            font-size: 1em;
-            line-height: 1.6;
-        }
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
 
-        .stars {
-            font-size: 18px;
-            color: #f1c40f;
-        }
+.stars {
+    font-size: 18px;
+    color: #f1c40f;
+}
 
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 2px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
-        footer p {
-            font-size: 12px;
-            color: #fff;
-            text-decoration: none;
-        }
+footer p {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+}
 
-        /* Icônes réseaux sociaux */
-        .social-icons {
-            width: 30px;
-            display: flex;
-            gap: 5px;
-            justify-content: center;
-        }
+/* Icônes réseaux sociaux */
+.social-icons {
+    width: 30px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
 
-        .social-icons a {
-            margin: 15px; /* Augmenter l'espace entre chaque icône */
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.2); /* Agrandit légèrement l'icône */
-        }
-
-        /* Diaporama (slider) */
-        .menu-slider {
-            position: relative;
-            max-width: 794px;  /* Limite la largeur du slider */
-            margin: auto;
-        }
-
-        .slide {
-            display: none;
-            text-align: center;
-        }
-
-        .menu-img {
-            width: 100%;
-            max-width: 800px; /* Limite la largeur à 800px */
-            height: auto;
-        }
-
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border: none;
-            cursor: pointer;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            z-index: 10;
-        }
-
-        .prev {
-            left: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        /* Remonter légèrement les étoiles et réduire la taille du texte des commentaires */
-        .review .stars {
-            font-size: 14px;  /* Réduit la taille des étoiles */
-            position: relative;  /* Permet de décaler les étoiles */
-            top: -15px;  /* Remonte les étoiles de 4px */
-        }
-
-        .review-text {
-            font-size: 14Px;  /* Réduit la taille du texte des commentaires */
-            line-height: 1.4;  /* Ajuste l'espacement entre les lignes pour plus de lisibilité */
-        }
-        .image-section {
-            text-align: center; /* Centrer le contenu de la section */
-            padding: 40px 20px; /* Ajouter un peu de padding autour de la section */
-            background-color: #f7f7f7; /* Couleur de fond de la section (optionnel) */
-            border-radius: 8px; /* Bordure arrondie (optionnel) */
-            margin-top: 40px; /* Espacement avant cette section */
-        }
-
-        .image-links {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Crée deux colonnes de largeur égale */
-            gap: 10px; /* Espace entre les images */
-            margin-top: -60px;
-        }
-
-        .image-link {
-            width: auto; /* Largeur des images */
-            height: 80px; /* Hauteur automatique pour garder la proportion */
-            border-radius: 8px; /* Arrondir les coins des images */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée légère pour les images */
-            transition: transform 0.3s ease; /* Ajout d'une transition pour le survol */
-        }
-
-    .image-link:hover {
-        transform: scale(1.2); /* Zoom lors du survol */
+.social-icons a {
+    margin: 15px; /* Augmenter l'espace entre chaque icône */
     }
 
+.social-icons a:hover {
+    transform: scale(1.2); /* Agrandit légèrement l'icône */
+    }
+
+/* Diaporama (slider) */
+.menu-slider {
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.menu-img {
+    width: 100%;
+    max-width: 800px; /* Limite la largeur à 800px */
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style de la fenêtre modale */
+.zoom-modal {
+    display: none;  /* La modale est cachée par défaut */
+    position: fixed;
+    z-index: 999;  /* La modale sera au-dessus du contenu */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  /* Fond semi-transparent */
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.zoom-img {
+    max-width: 90%;  /* Limite la taille de l'image */
+    max-height: 90%;
+    margin: auto;
+    display: block;
+}
+
+/* Style pour le bouton de fermeture de la modale */
+.zoom-modal .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #f1f1f1;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.zoom-modal .close:hover,
+.zoom-modal .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Remonter légèrement les étoiles et réduire la taille du texte des commentaires */
+.review .stars {
+    font-size: 14px;  /* Réduit la taille des étoiles */
+    position: relative;  /* Permet de décaler les étoiles */
+    top: -15px;  /* Remonte les étoiles de 4px */
+}
+
+.review-text {
+    font-size: 14Px;  /* Réduit la taille du texte des commentaires */
+    line-height: 1.4;  /* Ajuste l'espacement entre les lignes pour plus de lisibilité */
+}
+        
+.image-section {
+    text-align: center; /* Centrer le contenu de la section */
+    padding: 40px 20px; /* Ajouter un peu de padding autour de la section */
+    background-color: #f7f7f7; /* Couleur de fond de la section (optionnel) */
+    border-radius: 8px; /* Bordure arrondie (optionnel) */
+    margin-top: 40px; /* Espacement avant cette section */
+}
+
+.image-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crée deux colonnes de largeur égale */
+    gap: 10px; /* Espace entre les images */
+    margin-top: -60px;
+}
+
+.image-link {
+    width: auto; /* Largeur des images */
+    height: 80px; /* Hauteur automatique pour garder la proportion */
+    border-radius: 8px; /* Arrondir les coins des images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée légère pour les images */
+    transition: transform 0.3s ease; /* Ajout d'une transition pour le survol */
+}
+
+.image-link:hover {
+    transform: scale(1.2); /* Zoom lors du survol */
+}
 
 /* Section des horaires */
 .opening-hours-section {
@@ -322,52 +359,51 @@
 
 /* Media Queries pour rendre le site responsive */
 @media screen and (max-width: 500px) {
-        .green h1 {
-            margin-top: 5px;    /* Supprime la marge supérieure */
-            line-height: 0.5em; /* Ajuste la hauteur de ligne si nécessaire */
-            font-size: 1.2em;
-            }
+    .green h1 {
+        margin-top: 5px;    /* Supprime la marge supérieure */
+        line-height: 0.5em; /* Ajuste la hauteur de ligne si nécessaire */
+        font-size: 1.2em;
+    }
+    .green {
+        height: 70px; /* Hauteur réduite de chaque bande */
+    }   
 
-            .green {
-                height: 70px; /* Hauteur réduite de chaque bande */
-            }   
+    .white {
+        height: 55px; /* Hauteur réduite de chaque bande */
+    }   
 
-            .white {
-                height: 55px; /* Hauteur réduite de chaque bande */
-            }   
+    .red {
+        height: 55px; /* Hauteur réduite de chaque bande */
+    }   
 
-            .red {
-                height: 55px; /* Hauteur réduite de chaque bande */
-            }   
-
-            /* Taille de l'image par défaut */
-            .logo-img {
-                width: 200px; /* Taille par défaut de l'image */
-            }
+    /* Taille de l'image par défaut */
+    .logo-img {
+        width: 200px; /* Taille par défaut de l'image */
+    }
     
-            .menu-img {
-                width: 100%;  /* Les images prennent toute la largeur de l'écran */
-            }
+    .menu-img {
+        width: 100%;  /* Les images prennent toute la largeur de l'écran */
+    }
 
-            header h1 {
-                font-size: 1.4em;  /* Taille du titre encore plus petite sur mobile */
-            }
+    header h1 {
+        font-size: 1.4em;  /* Taille du titre encore plus petite sur mobile */
+    }
 
-            .header-info a {
-                font-size: 0.9em;  /* Taille des liens réduite */
-            }
+    .header-info a {
+        font-size: 0.9em;  /* Taille des liens réduite */
+    }
 
-            .social-icons {
-                width: 25px;
-            }
+    .social-icons {
+        width: 25px;
+    }
     
-            .social-icons a {
-                margin: 12px; /* Diminuer l'espace entre chaque icône */
-            }
+    .social-icons a {
+        margin: 12px; /* Diminuer l'espace entre chaque icône */
+    }
             
-            .prev, .next {
-                font-size: 10px;  /* Réduire la taille des flèches */
-                padding: 8px;  /* Réduire l'espacement autour des flèches */
-            }
+    .prev, .next {
+        font-size: 10px;  /* Réduire la taille des flèches */
+        padding: 8px;  /* Réduire l'espacement autour des flèches */
+    }
             
 }
