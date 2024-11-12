@@ -59,7 +59,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Centre les éléments verticalement */
-    height: 55px; /* Hauteur réduite de chaque bande */
+    height: 60px; /* Hauteur réduite de chaque bande */
 }
 
 .red {
@@ -69,7 +69,7 @@ header {
     font-size: 1.3em; /* Taille du texte réduite */
     justify-content: space-evenly; /* Espace les icônes horizontalement */
     text-align: center;
-    height: 55px; /* Hauteur réduite de chaque bande */
+    height: 60px; /* Hauteur réduite de chaque bande */
 }
 
 header h1 {
@@ -87,7 +87,7 @@ header h1 {
 
 .header-info a {
     color: black;
-    font-size: 1.2em; /* Taille réduite pour les liens */
+    font-size: 1.4em; /* Taille réduite pour les liens */
     margin-top: 6px;  /* Ajoute de l'espace sous le lien du téléphone */
     text-decoration: underline;  /* Applique le soulignement */
 }
