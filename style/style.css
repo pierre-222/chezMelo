@@ -178,7 +178,7 @@ footer p {
 
 .menu-img {
     width: 100%;
-    max-width: 506px; /* Limite la largeur à 500px */
+    max-width: 480px; /* Limite la largeur à 480px */
     height: auto;
 }
 
