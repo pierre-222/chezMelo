@@ -59,7 +59,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Centre les éléments verticalement */
-    height: 60px; /* Hauteur réduite de chaque bande */
+    height: 55px; /* Hauteur réduite de chaque bande */
 }
 
 .red {
@@ -69,7 +69,7 @@ header {
     font-size: 1.3em; /* Taille du texte réduite */
     justify-content: space-evenly; /* Espace les icônes horizontalement */
     text-align: center;
-    height: 60px; /* Hauteur réduite de chaque bande */
+    height: 55px; /* Hauteur réduite de chaque bande */
 }
 
 header h1 {
@@ -83,18 +83,9 @@ header h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.header-info a {
-    color: black;
-    font-size: 1.4em; /* Taille réduite pour les liens */
+    font-size: 1.2em; /* Taille réduite pour les liens */
     margin-top: 6px;  /* Ajoute de l'espace sous le lien du téléphone */
-    text-decoration: underline;  /* Applique le soulignement */
-}
 
-.header-info a:hover, .google-maps a:hover {
-    text-decoration: underline solid #1a73e8;  /* Bleu Google pour le soulignement au survol */
-    color: #1a73e8; /* Change la couleur du texte au survol */
 }
 
 /* Icône du téléphone (noire et sans fond) */
@@ -203,16 +194,20 @@ footer p {
 
 .prev {
     left: 0px;
+    text-decoration: none; /* Enlève le soulignement */
     border-radius: 3px 0 0 3px;
+
 }
 
 .next {
     right: 0px;
+    text-decoration: none; /* Enlève le soulignement */
     border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: none; /* Enlève le soulignement */
 }
 
 /* Remonter légèrement les étoiles et réduire la taille du texte des commentaires */
@@ -351,7 +346,7 @@ footer p {
         font-size: 1.4em;  /* Taille du titre encore plus petite sur mobile */
     }
 
-    .header-info a {
+    .header-info {
         font-size: 0.9em;  /* Taille des liens réduite */
     }
 
