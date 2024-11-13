@@ -33,24 +33,26 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Centre les éléments verticalement */
-    height: 95px; /* Hauteur réduite de chaque bande */
+    height: 100px; /* Hauteur réduite de chaque bande */
     text-align: center; /* S'assure que le texte est centré horizontalement */
     padding: 0 10px; /* Ajoute un peu d'espace à gauche et à droite si nécessaire */
 }
 
 /* Réduire la marge au-dessus du titre */
 .green h1 {
-    margin-top: 5px;    /* Supprime la marge supérieure */
+    margin-top: 2px;    /* Supprime la marge supérieure */
     line-height: 1.2em; /* Ajuste la hauteur de ligne si nécessaire */
     font-family: 'Dancing Script', cursive;
     font-size: 1.4em;
     text-align: center;
+    justify-content: center; /* Centre les éléments verticalement */
+
 }
 
 /* Taille de l'image par défaut */
 .logo-img {
     width: 275px; /* Taille par défaut de l'image */
-    margin-top: 6px;
+    margin-top: 10px;
 }
 
 .white {
@@ -172,7 +174,19 @@ footer p {
 .slide {
     display: none;
     text-align: center;
-    position: relative;
+    position: relative; /* Position absolute pour que les images se superposent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease, transform 1s ease; /* Transition fluide sur l'opacité et le déplacement */
+}
+
+/* Affichage de la slide active */
+.slide.active {
+    display: block;
+    opacity: 1;  /* Rend l'image visible */
+    transform: translateX(0); /* Remet l'image à sa place après le déplacement */
 }
 
 .menu-img {
