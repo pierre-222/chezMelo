@@ -113,7 +113,6 @@ header h1 {
     margin: 20px auto;
 }
 
-
 h2 {
     font-family: 'Dancing Script', cursive;  /* Police manuscrite comme pour Ciao Ragazzi */
     color: #e74c3c;  /* Couleur rouge */
@@ -383,3 +382,9 @@ footer p {
     }
             
 }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    font-display: swap; /* Remplace le texte avec une police de secours jusqu'à ce que la police soit chargée */
+  }
