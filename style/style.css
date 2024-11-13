@@ -101,10 +101,20 @@ header h1 {
     margin: 20px auto;
 }
 
+/* Section centrée */
+.content-section-intro {
+    padding: 20px;
+    text-align: justify;
+    margin: 20px auto;
+}
+
+
 h2 {
     font-family: 'Dancing Script', cursive;  /* Police manuscrite comme pour Ciao Ragazzi */
     color: #e74c3c;  /* Couleur rouge */
     font-size: 2.2em;
+    text-align: center;
+
 }
 
 .rag {
