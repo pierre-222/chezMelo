@@ -397,3 +397,9 @@ footer p {
     src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     font-display: swap; /* Remplace le texte avec une police de secours jusqu'à ce que la police soit chargée */
   }
+
+  @font-face {
+    font-family: 'Dancing Script';
+    src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+    font-display: swap;
+}
