@@ -70,11 +70,14 @@ header {
 .intro p {
     text-align: justify;
     margin: 10px auto;
+    padding-bottom: 20px; /* Ajouter de l'espace sous le texte pour éviter qu'il ne se déplace */
 }
 
 /* Taille de l'image intro */
 .intro img {
-    max-width: 100%; /* Taille par défaut de l'image */
+    width: 100%; /* L'image prendra toute la largeur disponible */
+    height: auto; /* La hauteur est ajustée pour conserver le ratio de l'image */
+    max-width: 754px; /* Limite la taille de l'image pour qu'elle ne devienne pas trop large sur les grands écrans */
     align-items: center;      /* Centre l'image verticalement */
     justify-content: center;  /* Centre l'image horizontalement */
     height: auto;            /* Donne une hauteur au conteneur pour voir l'effet de centrage vertical */
