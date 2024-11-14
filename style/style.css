@@ -197,7 +197,6 @@ footer p {
     left: 0;
     width: 100%;
     height: auto;
-    transition: opacity 1s ease, transform 1s ease; /* Transition fluide sur l'opacité et le déplacement */
 }
 
 /* Affichage de la slide active */
@@ -232,14 +231,15 @@ footer p {
 .prev {
     left: 0px;
     text-decoration: none; /* Enlève le soulignement */
-    border-radius: 3px 0 0 3px;
+    border-radius: 0 3px 3px 0;
 
 }
 
 .next {
     right: 0px;
     text-decoration: none; /* Enlève le soulignement */
-    border-radius: 3px 0 0 3px;
+    border-radius: 3px  0 3px;
+    margin-right: 10px;
 }
 
 .prev:hover, .next:hover {
