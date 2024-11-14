@@ -162,15 +162,11 @@ footer p {
 /* Icônes réseaux sociaux */
 .social-icons {
     width: 30px;
-    height: 30px; /* Ajoute une hauteur pour définir une taille fixe */
+    height: auto; /* Ajoute une hauteur pour définir une taille fixe */
     display: flex;
-    gap: 5px;
+    gap: 30px;
     justify-content: center;
 }
-
-.social-icons a {
-    margin: 15px; /* Augmenter l'espace entre chaque icône */
-    }
 
 .social-icons a:hover {
     transform: scale(1.2); /* Agrandit légèrement l'icône */
@@ -371,12 +367,9 @@ footer p {
 
     .social-icons {
         width: 25px;
+        height: auto;
     }
     
-    .social-icons a {
-        margin: 12px; /* Diminuer l'espace entre chaque icône */
-    }
-            
     .prev, .next {
         font-size: 10px;  /* Réduire la taille des flèches */
     }
