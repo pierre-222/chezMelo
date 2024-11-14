@@ -57,27 +57,24 @@ header {
 
 /* Section centrée */
 .intro {
-    padding: 20px;
     text-align: center;
-    margin: 10px auto;
     display: flex;            /* Utilisation de Flexbox pour centrer le contenu */
     flex-direction: column;   /* Aligne les éléments enfants en colonne */
     align-items: center;      /* Centre les éléments horizontalement */
     justify-content: center;  /* Centre les éléments verticalement (si vous voulez aussi centrer verticalement) */
+    padding: 20px;
+    margin: 10px auto;
 }
 
 /* Section centrée */
 .intro p {
     text-align: justify;
-    margin: 10px auto;
-    padding-bottom: 20px; /* Ajouter de l'espace sous le texte pour éviter qu'il ne se déplace */
 }
 
 /* Taille de l'image intro */
 .intro img {
     width: 100%; /* L'image prendra toute la largeur disponible */
     height: auto; /* La hauteur est ajustée pour conserver le ratio de l'image */
-    max-width: 754px; /* Limite la taille de l'image pour qu'elle ne devienne pas trop large sur les grands écrans */
     align-items: center;      /* Centre l'image verticalement */
     justify-content: center;  /* Centre l'image horizontalement */
     height: auto;            /* Donne une hauteur au conteneur pour voir l'effet de centrage vertical */
