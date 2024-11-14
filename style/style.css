@@ -118,12 +118,6 @@ header h1 {
 
 }
 
-/* Icône du téléphone (noire et sans fond) */
-.icon {
-    width: 20px;
-    margin-right: 10px;
-}
-
 /* Section centrée */
 .content-section {
     padding: 3px;
@@ -167,8 +161,8 @@ footer p {
 
 /* Icônes réseaux sociaux */
 .social-icons {
-    width: 48px;
-    height: 48px; /* Ajoute une hauteur pour définir une taille fixe */
+    width: 30px;
+    height: 30px; /* Ajoute une hauteur pour définir une taille fixe */
     display: flex;
     gap: 5px;
     justify-content: center;
