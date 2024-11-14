@@ -378,7 +378,7 @@ footer p {
 /* Bouton de fermeture toujours visible */
 .close-modal {
     position: fixed;
-    top: 10px;
+    top: 20px;
     right: 20px;
     color: white;
     font-size: 30px;
