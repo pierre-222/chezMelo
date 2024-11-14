@@ -167,8 +167,8 @@ footer p {
 
 /* Icônes réseaux sociaux */
 .social-icons {
-    width: 30px;
-    height: 30px; /* Ajoute une hauteur pour définir une taille fixe */
+    width: 48px;
+    height: 48px; /* Ajoute une hauteur pour définir une taille fixe */
     display: flex;
     gap: 5px;
     justify-content: center;
