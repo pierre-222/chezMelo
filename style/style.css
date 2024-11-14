@@ -359,7 +359,7 @@ footer p {
 
 /* Conteneur de l'image dans la modale avec scroll */
 .image-modal-content {
-    max-height: 80%;
+    max-height: 95%;
     max-width: 95%; /* Limite la largeur de l'image à 600px */
     overflow: auto; /* Permet le scroll uniquement sur l'image */
     position: relative;
@@ -386,7 +386,13 @@ footer p {
     cursor: pointer;
     z-index: 1010; /* S'assurer que la croix soit au-dessus de l'image et de la modale */
     background-color: rgba(0, 0, 0, 0.5); /* Légère transparence pour la croix */
-    padding: 5px 15px;
+    padding: 10px;
+    border-radius: 50%; /* Arrondir les coins du bouton */
+    width: 20px; /* Largeur fixe pour un bouton rond */
+    height: 20px; /* Hauteur fixe pour un bouton rond */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Style du menu image uniquement */
