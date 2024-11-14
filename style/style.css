@@ -217,13 +217,13 @@ footer p {
     transform: translateY(-50%); /* Ajuste précisément la position verticale */
     width: auto;
     padding: 12px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.25);
     border: none;
     cursor: pointer;
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px 3px 3px 3px;
     user-select: none;
     z-index: 10;
 }
@@ -231,20 +231,14 @@ footer p {
 .prev {
     left: 0px;
     text-decoration: none; /* Enlève le soulignement */
-    border-radius: 0 3px 3px 0;
+    padding-right: 30px;
 
 }
 
 .next {
     right: 0px;
     text-decoration: none; /* Enlève le soulignement */
-    border-radius: 3px  0 3px;
-    margin-right: 10px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    text-decoration: none; /* Enlève le soulignement */
+    padding-left: 30px;
 }
 
 /* Remonter légèrement les étoiles et réduire la taille du texte des commentaires */
