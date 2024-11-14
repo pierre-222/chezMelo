@@ -216,7 +216,7 @@ footer p {
     top: 50%;
     transform: translateY(-50%); /* Ajuste précisément la position verticale */
     width: auto;
-    padding: 12px;
+    padding: 10px;
     color: black;
     font-weight: bold;
     font-size: 14px;
@@ -231,14 +231,12 @@ footer p {
 .prev {
     left: 0px;
     text-decoration: none; /* Enlève le soulignement */
-    padding-right: 30px;
-
 }
 
 .next {
     right: 0px;
     text-decoration: none; /* Enlève le soulignement */
-    padding-left: 30px;
+    margin-right: 20px;
 }
 
 /* Remonter légèrement les étoiles et réduire la taille du texte des commentaires */
