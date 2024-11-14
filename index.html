@@ -12,7 +12,7 @@
     <script src="script/script.js" defer></script>
     <!-- Google Fonts : Poppins pour le corps du texte et Dancing Script pour le texte manuscrit -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
-        <!-- Lien vers le favicon -->
+    <!-- Lien vers le favicon -->
     <link rel="icon" href="images/cMi-favicone.png" />
 </head>
 
@@ -112,31 +112,10 @@
         <h2>Notre carte</h2>
         <p>Ragazzi ! <strong><u>Pizza uniquement le soir</u></strong>
         <br><strong><u>Le midi</u></strong> :  On vous régale avec le plat du jour, lasagne, pasta, salade...</p>
-        <!-- Début du diaporama -->
-        <div class="menu-slider">
-            <div class="slide">
-                <img src="images/menu2024chezmelo_m1.jpg" alt="Page 1 du menu chez Mélo - nos meilleures Pizza" class="menu-img">
-            </div>
-            <div class="slide">
-                <img src="images/menu2024chezmelo_m2.jpg" alt="Page 2 du menu chez Mélo - nos meilleures Pizza" class="menu-img">
-            </div>
-            <div class="slide">
-                <img src="images/menu2024chezmelo_m3.jpg" alt="Page 3 du menu chez Mélo - nos meilleures Pizza" class="menu-img">
-            </div>
-            <div class="slide">
-                <img src="images/menu2024chezmelo_m4.jpg" alt="Page 4 du menu chez Mélo - Antipasti, salades, plat du jour et desserts" class="menu-img">
-            </div>
-            <div class="slide">
-                <img src="images/menu2024chezmelo_m5.jpg" alt="Page 5 du menu chez Mélo - Boissons et Vins" class="menu-img">
-            </div>
-            <div class="slide">
-                <img src="images/menu2024chezmelo_m6.jpg" alt="Page 6 du menu chez Mélo - Boissons et Vins" class="menu-img">
-            </div>
-
-
-            <!-- Boutons de navigation (précédent et suivant) -->
-            <a class="prev" href="#previous" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" href="#next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <!-- Lien vers l'image du menu -->
+        <div class="image-link-container">
+            <a href="#" class="open-image-link" onclick="openImageModal(); return false;">Voir la carte</a>
         </div>
     </section>
            
@@ -185,8 +164,17 @@
               
     <!-- Footer -->
     <footer>
-        <p>© 2024 Chez Mélo | website with &#10084; by <b>piero.cugino</b></p> 
+        <p>© 2024 Pizzeria Chez Melo - Tous droits réservés</p>
     </footer>
 
+<!-- Fenêtre modale -->
+<div id="menuImage" class="image-modal">
+    <div class="image-modal-content">
+        <span class="close-modal" onclick="closeImageModal();">&times;</span>
+        <img src="images/la Carte - format mobile.jpg" alt="Image" />
+    </div>
+</div>
+
 </body>
+
 </html>

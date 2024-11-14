@@ -267,10 +267,6 @@ footer p {
     transition: transform 0.3s ease; /* Ajout d'une transition pour le survol */
 }
 
-.image-link:hover {
-    transform: scale(1.2); /* Zoom lors du survol */
-}
-
 /* Section des horaires */
 .opening-hours-section {
     margin: 50px auto;
@@ -327,6 +323,85 @@ footer p {
 .opening-hours-row div {
     width: 48%;
     padding: 2px;
+}
+
+
+/* Lien pour ouvrir l'image */
+.image-link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.open-image-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    border-radius: 5px;
+}
+
+/* Style de la fenêtre modale */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Empêcher le scroll de la page */
+}
+
+/* Conteneur de l'image dans la modale avec scroll */
+.image-modal-content {
+    max-height: 80%;
+    max-width: 80%; /* Limite la largeur de l'image à 600px */
+    overflow: auto; /* Permet le scroll uniquement sur l'image */
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.image-modal img {
+    display: block;
+    max-width: 100%;  /* Respecte la largeur maximale de 600px */
+    height: auto;     /* Laisse la hauteur se redimensionner automatiquement */
+    object-fit: contain; /* Garde l'aspect ratio de l'image */
+}
+
+
+/* Bouton de fermeture toujours visible */
+.close-modal {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1010; /* S'assurer que la croix soit au-dessus de l'image et de la modale */
+    background-color: rgba(0, 0, 0, 0.5); /* Légère transparence pour la croix */
+    padding: 5px;
+    border-radius: 50%; /* Rendre la croix ronde */
+}
+
+/* Style du menu image uniquement */
+.menu-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+/* Empêcher le scroll de la page derrière la modale */
+body.no-scroll {
+    overflow: hidden;
 }
 
 /* Media Queries pour rendre le site responsive */
