@@ -126,7 +126,7 @@ header h1 {
 
 /* Section centrée */
 .content-section {
-    padding: 20px;
+    padding: 3px;
     text-align: center;
     margin: 20px auto;
 }
@@ -257,7 +257,7 @@ footer p {
 .review-text {
     font-size: 14Px;  /* Réduit la taille du texte des commentaires */
     line-height: 1.4;  /* Ajuste l'espacement entre les lignes pour plus de lisibilité */
-    margin: 10px auto;
+    margin: 15px auto;
     padding: 0 20px;
 }
         
@@ -290,16 +290,9 @@ footer p {
 
 /* Section des horaires */
 .opening-hours-section {
-    margin: 40px auto;
+    margin: 50px auto;
     text-align: center;
     max-width: 320px;  /* Réduit la largeur du tableau */
-}
-
-/* Titre des horaires (h2) */
-.opening-hours-title {
-    font-size: 1.2em;  /* Réduit la taille de la police */
-    color: #333;
-    margin-bottom: 20px;
 }
 
 /* Tableau des horaires */
