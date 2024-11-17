@@ -63,6 +63,7 @@ header {
     align-items: center;      /* Centre les éléments horizontalement */
     justify-content: center;  /* Centre les éléments verticalement (si vous voulez aussi centrer verticalement) */
     padding: 20px;
+    margin-top: 30px;
 }
 
 /* Section centrée */
@@ -120,10 +121,13 @@ header h1 {
 
 /* Section centrée */
 .content-section {
+    max-width: 620px;
+    width: 100%;
     padding: 3px;
     text-align: center;
-    margin-top: 50px;
+    margin: 50px auto 0;     /* Centrage de la section horizontalement avec une marge au-dessus */
 }
+
 
 
 h2 {
@@ -157,6 +161,10 @@ footer p {
     font-size: 12px;
     color: #fff;
     text-decoration: none;
+}
+
+footer .small-text {
+    font-size: 0.8em; /* Taille plus petite pour le texte "website with ..." */
 }
 
 /* Icônes réseaux sociaux */
@@ -329,7 +337,7 @@ footer p {
 /* Lien pour ouvrir l'image */
 .image-link-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .open-image-link {
