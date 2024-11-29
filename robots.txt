@@ -1,0 +1,8 @@
+# Fichier robots.txt pour Chez Melo - Pizzeria à Sète
+
+# Autoriser tous les robots à explorer tout le site
+User-agent: *
+Disallow:
+
+# Indiquer où se trouve le sitemap
+Sitemap: http://chezmelo.fr/sitemap.xml
