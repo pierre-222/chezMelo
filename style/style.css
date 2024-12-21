@@ -121,6 +121,7 @@ header h1 {
 
 /* Section centrée */
 .content-section {
+    color: black; /* Texte en noir */
     max-width: 620px;
     width: 100%;
     padding: 3px;
