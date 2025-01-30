@@ -75,8 +75,8 @@ header {
 /* Section centrée */
 .note {
     text-align: center;
-    margin-top: -30px;  /* Ajoute de l'espace sous le lien du téléphone */
-
+    font-size: 0.9em;  /* Taille de texte un peu plus grande pour la lisibilité */
+    font-style: italic;  /* Ajouter un effet italique pour une touche d'élégance */
 }
 
 /* Taille de l'image intro */
